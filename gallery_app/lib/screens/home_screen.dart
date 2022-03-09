@@ -19,10 +19,10 @@ class _HomeScreenState extends State<HomeScreen> {
               margin: const EdgeInsets.all(10),
               child: ElevatedButton(
                 onPressed: () {},
-                child: Icon(Icons.person, color: Colors.blue),
+                child: const Icon(Icons.person, color: Colors.blue),
                 style: ElevatedButton.styleFrom(
-                  shape: CircleBorder(),
-                  padding: EdgeInsets.all(1),
+                  shape: const CircleBorder(),
+                  padding: const EdgeInsets.all(1),
                   primary: Colors.white, // <-- Button color
                   onPrimary: Colors.red, // <-- Splash color
                 ),
