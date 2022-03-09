@@ -17,7 +17,7 @@ class HomeItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        // Navigator.of(context).pushNamed(routeName);
+        Navigator.of(context).pushNamed(routeName);
       },
       child: ListTile(
         leading: Icon(iconData),
