@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
               title: "Cuperterio",
               subtitle:
                   "Beautiful and high-fidelity widgets for current IOS design language",
-              routeName: "routeName",
+              routeName: "/CupertinoScreen",
               iconData: Icons.phone_iphone),
           HomeItem(
             title: "Typography",
