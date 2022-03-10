@@ -76,7 +76,7 @@ class BottomAppbarScreen extends StatelessWidget {
             ],
           ),
           bottomNavigationBar: BottomAppBar(
-            shape: model.notch ? CircularNotchedRectangle() : null,
+            shape: model.notch ? const CircularNotchedRectangle() : null,
             child: Row(children: [
               IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
               IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
