@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gallery_app/features/models/row_column.dart';
+import 'package:gallery_app/widgets/button_dropdown.dart';
 import 'package:provider/provider.dart';
 import 'dart:ui' as ui;
 
@@ -84,9 +85,9 @@ class RowColumnScreen extends StatelessWidget {
                   ))
                 ]),
               ),
-              itemButton(
-                  "mainAxisSize",
-                  DropdownButton<MainAxisSize>(
+              ButtonDropdown(
+                  title: "mainAxisSize",
+                  child: DropdownButton<MainAxisSize>(
                     items: const [
                       DropdownMenuItem(
                         value: MainAxisSize.max,
@@ -102,9 +103,9 @@ class RowColumnScreen extends StatelessWidget {
                     },
                     value: model.mainAxisSize,
                   )),
-              itemButton(
-                  "mainAxisAlignment",
-                  DropdownButton<MainAxisAlignment>(
+              ButtonDropdown(
+                  title: "mainAxisAlignment",
+                  child: DropdownButton<MainAxisAlignment>(
                     items: const [
                       DropdownMenuItem(
                         value: MainAxisAlignment.start,
@@ -136,9 +137,9 @@ class RowColumnScreen extends StatelessWidget {
                     },
                     value: model.mainAxisAlignment,
                   )),
-              itemButton(
-                  "crossAxisAlignment",
-                  DropdownButton<CrossAxisAlignment>(
+              ButtonDropdown(
+                  title: "crossAxisAlignment",
+                  child: DropdownButton<CrossAxisAlignment>(
                     items: const [
                       DropdownMenuItem(
                         value: CrossAxisAlignment.start,
@@ -166,9 +167,9 @@ class RowColumnScreen extends StatelessWidget {
                     },
                     value: model.crossAxisAlignment,
                   )),
-              itemButton(
-                  "verticalDirection",
-                  DropdownButton<VerticalDirection>(
+              ButtonDropdown(
+                  title: "verticalDirection",
+                  child: DropdownButton<VerticalDirection>(
                     items: const [
                       DropdownMenuItem(
                         value: VerticalDirection.up,
@@ -184,9 +185,9 @@ class RowColumnScreen extends StatelessWidget {
                     },
                     value: model.verticalDirection,
                   )),
-              itemButton(
-                  "textDirection",
-                  DropdownButton<bool>(
+              ButtonDropdown(
+                  title: "textDirection",
+                  child: DropdownButton<bool>(
                     items: const [
                       DropdownMenuItem(
                         value: true,
@@ -202,9 +203,9 @@ class RowColumnScreen extends StatelessWidget {
                     },
                     value: model.textDirection,
                   )),
-              itemButton(
-                  "textBaseline",
-                  DropdownButton<TextBaseline>(
+              ButtonDropdown(
+                  title: "textBaseline",
+                  child: DropdownButton<TextBaseline>(
                     items: const [
                       DropdownMenuItem(
                         value: TextBaseline.alphabetic,
@@ -224,22 +225,6 @@ class RowColumnScreen extends StatelessWidget {
           )),
         );
       },
-    );
-  }
-
-  Widget itemButton(String title, Widget child) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: Row(
-        children: [
-          Expanded(
-              child: Text(
-            title,
-            style: const TextStyle(color: Colors.black),
-          )),
-          child
-        ],
-      ),
     );
   }
 }
