@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gallery_app/features/models/stack_align.dart';
+import 'package:gallery_app/widgets/button_dropdown.dart';
 import 'package:provider/provider.dart';
 import 'dart:ui' as ui;
 
@@ -54,9 +55,9 @@ class StackAlignScreen extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              itemButton(
-                  "Alignment",
-                  DropdownButton<AlignmentDirectional>(
+              ButtonDropdown(
+                  title: "Alignment",
+                  child: DropdownButton<AlignmentDirectional>(
                     items: const [
                       DropdownMenuItem(
                         value: AlignmentDirectional.topStart,
@@ -101,9 +102,9 @@ class StackAlignScreen extends StatelessWidget {
                     },
                     value: model.alignmentDirectional,
                   )),
-              itemButton(
-                  "TextDirection",
-                  DropdownButton<bool>(
+              ButtonDropdown(
+                  title: "TextDirection",
+                  child: DropdownButton<bool>(
                     items: const [
                       DropdownMenuItem(
                         value: true,
@@ -119,9 +120,9 @@ class StackAlignScreen extends StatelessWidget {
                     },
                     value: model.textDirection,
                   )),
-              itemButton(
-                  "StackFit",
-                  DropdownButton<StackFit>(
+              ButtonDropdown(
+                  title: "StackFit",
+                  child: DropdownButton<StackFit>(
                     items: const [
                       DropdownMenuItem(
                         value: StackFit.loose,
@@ -141,9 +142,9 @@ class StackAlignScreen extends StatelessWidget {
                     },
                     value: model.stackFit,
                   )),
-              itemButton(
-                  "Clip",
-                  DropdownButton<Clip>(
+              ButtonDropdown(
+                  title: "Clip",
+                  child: DropdownButton<Clip>(
                     items: const [
                       DropdownMenuItem(
                         value: Clip.antiAlias,
@@ -171,22 +172,6 @@ class StackAlignScreen extends StatelessWidget {
           )),
         );
       },
-    );
-  }
-
-  Widget itemButton(String title, Widget child) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: Row(
-        children: [
-          Expanded(
-              child: Text(
-            title,
-            style: const TextStyle(color: Colors.black),
-          )),
-          child
-        ],
-      ),
     );
   }
 }
