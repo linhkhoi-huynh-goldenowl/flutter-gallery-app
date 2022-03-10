@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
-import '../modules/models/cupertino_form.dart';
+import '../features/models/cupertino_form.dart';
 
 class CupertinoPickTime extends StatelessWidget {
   final String type;

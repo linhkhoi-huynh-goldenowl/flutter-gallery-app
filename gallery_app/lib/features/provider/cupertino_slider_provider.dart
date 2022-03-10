@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:gallery_app/modules/models/cupertino_slider.dart';
+import 'package:gallery_app/features/models/cupertino_slider.dart';
 
 class CupertinoSliderProvider with ChangeNotifier {
   final List _sliders = [CupertinoSliderModel(), CupertinoSliderModel()];

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:gallery_app/config/routes/router.dart';
-import 'package:gallery_app/modules/dashboard/provider/cupertino_slider_provider.dart';
-import 'package:gallery_app/modules/models/cupertino_form.dart';
-import 'package:gallery_app/modules/models/cupertino_switch.dart';
+import 'features/provider/cupertino_slider_provider.dart';
+import 'features/models/cupertino_form.dart';
+import 'features/models/cupertino_switch.dart';
 import 'package:provider/provider.dart';
 
-import 'modules/dashboard/screens/home_screen.dart';
+import 'features/screens/home_screen.dart';
 
 void main() {
   runApp(
