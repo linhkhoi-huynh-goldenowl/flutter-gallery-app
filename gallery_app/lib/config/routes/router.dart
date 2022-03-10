@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gallery_app/features/screens/cupertino_widget/cupertino_screen.dart';
 import 'package:gallery_app/features/screens/home_screen.dart';
 import 'package:gallery_app/features/screens/rich_text_screen.dart';
+import 'package:gallery_app/features/screens/row_column_screen.dart';
 
 class AppRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -12,6 +13,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const CupertinoScreen());
       case '/RichTextScreen':
         return MaterialPageRoute(builder: (_) => const RichTextScreen());
+      case '/RowColumnScreen':
+        return MaterialPageRoute(builder: (_) => const RowColumnScreen());
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(
