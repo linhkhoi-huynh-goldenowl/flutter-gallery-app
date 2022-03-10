@@ -3,6 +3,7 @@ import 'package:gallery_app/features/screens/cupertino_widget/cupertino_screen.d
 import 'package:gallery_app/features/screens/home_screen.dart';
 import 'package:gallery_app/features/screens/rich_text_screen.dart';
 import 'package:gallery_app/features/screens/row_column_screen.dart';
+import 'package:gallery_app/features/screens/stack_align_screen.dart';
 
 class AppRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -15,6 +16,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const RichTextScreen());
       case '/RowColumnScreen':
         return MaterialPageRoute(builder: (_) => const RowColumnScreen());
+      case '/StackAlignScreen':
+        return MaterialPageRoute(builder: (_) => const StackAlignScreen());
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(

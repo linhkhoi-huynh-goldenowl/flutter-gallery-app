@@ -96,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
               title: "Stack & Align",
               subtitle:
                   "A widget that positions its children relative to the edges of its box",
-              routeName: "routeName",
+              routeName: "/StackAlignScreen",
               iconData: Icons.content_copy),
           HomeItem(
               title: "Container",

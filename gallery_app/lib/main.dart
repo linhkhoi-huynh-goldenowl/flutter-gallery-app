@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gallery_app/config/routes/router.dart';
 import 'package:gallery_app/features/models/row_column.dart';
+import 'package:gallery_app/features/models/stack_align.dart';
 import 'features/provider/cupertino_slider_provider.dart';
 import 'features/models/cupertino_form.dart';
 import 'features/models/cupertino_switch.dart';
@@ -16,6 +17,7 @@ void main() {
         ChangeNotifierProvider(create: (_) => CupertinoSwitchModel()),
         ChangeNotifierProvider(create: (_) => CupertinoFormModel()),
         ChangeNotifierProvider(create: (_) => RowColumnModel()),
+        ChangeNotifierProvider(create: (_) => StackAlignModel()),
       ],
       child: const MyApp(),
     ),
