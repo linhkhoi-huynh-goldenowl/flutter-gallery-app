@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:gallery_app/modules/models/cupertino_form.dart';
+import 'package:gallery_app/features/models/cupertino_form.dart';
 import 'package:gallery_app/utils/ui/app_label.dart';
 import 'package:gallery_app/widgets/cupertino_pick_time.dart';
 import 'package:provider/provider.dart';

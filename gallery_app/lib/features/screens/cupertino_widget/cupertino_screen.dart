@@ -5,7 +5,6 @@ import 'cupertino_tabs/modal_tab.dart';
 import 'cupertino_tabs/widget_tab.dart';
 
 class CupertinoScreen extends StatelessWidget {
-  static const routeName = "/CupertinoScreen";
   const CupertinoScreen({Key? key}) : super(key: key);
 
   @override

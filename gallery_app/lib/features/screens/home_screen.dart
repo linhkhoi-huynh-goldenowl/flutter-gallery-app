@@ -40,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
           HomeItem(
             title: "Typography",
             subtitle: "All of the predefined text styles",
-            routeName: "routeName",
+            routeName: "/RichTextScreen",
             iconData: Icons.text_fields,
           ),
           HomeItem(
