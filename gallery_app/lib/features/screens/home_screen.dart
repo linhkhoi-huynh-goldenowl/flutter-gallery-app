@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
               title: "Row & Column",
               subtitle:
                   "A widget that displays its children in a horizontal and vertical array",
-              routeName: "routeName",
+              routeName: "/RowColumnScreen",
               iconData: Icons.graphic_eq),
           HomeItem(
               title: "Wrap & Chip",
