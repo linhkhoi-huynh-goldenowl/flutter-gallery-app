@@ -63,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
           HomeItem(
               title: "Card",
               subtitle: "Cards with rounded corners and decoration",
-              routeName: "routeName",
+              routeName: "/CustomBoxScreen",
               iconData: Icons.chrome_reader_mode),
           HomeItem(
               title: "List Tile",
