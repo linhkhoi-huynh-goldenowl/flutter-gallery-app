@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
           HomeItem(
               title: "Bottom app bar",
               subtitle: "Bottom application bar",
-              routeName: "routeName",
+              routeName: "/BottomAppbarScreen",
               iconData: Icons.menu),
           HomeItem(
               title: "Button",
@@ -63,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
           HomeItem(
               title: "Card",
               subtitle: "Cards with rounded corners and decoration",
-              routeName: "routeName",
+              routeName: "/CustomBoxScreen",
               iconData: Icons.chrome_reader_mode),
           HomeItem(
               title: "List Tile",
