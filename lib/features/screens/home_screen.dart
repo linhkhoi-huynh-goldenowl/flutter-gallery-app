@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
           HomeItem(
               title: "Bottom app bar",
               subtitle: "Bottom application bar",
-              routeName: "routeName",
+              routeName: "/BottomAppbarScreen",
               iconData: Icons.menu),
           HomeItem(
               title: "Button",
@@ -63,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
           HomeItem(
               title: "Card",
               subtitle: "Cards with rounded corners and decoration",
-              routeName: "routeName",
+              routeName: "/CustomBoxScreen",
               iconData: Icons.chrome_reader_mode),
           HomeItem(
               title: "List Tile",
@@ -90,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
           HomeItem(
               title: "Wrap & Chip",
               subtitle: "Wrap & Chip",
-              routeName: "routeName",
+              routeName: "/WrapChipScreen",
               iconData: Icons.edit_attributes),
           HomeItem(
               title: "Stack & Align",
@@ -107,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
           HomeItem(
               title: "Other",
               subtitle: "Sliders, Indicators, Selections",
-              routeName: "routeName",
+              routeName: "/ImageAppbarScreen",
               iconData: Icons.donut_large),
         ],
       ),
