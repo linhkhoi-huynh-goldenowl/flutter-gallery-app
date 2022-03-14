@@ -90,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
           HomeItem(
               title: "Wrap & Chip",
               subtitle: "Wrap & Chip",
-              routeName: "routeName",
+              routeName: "/WrapChipScreen",
               iconData: Icons.edit_attributes),
           HomeItem(
               title: "Stack & Align",
