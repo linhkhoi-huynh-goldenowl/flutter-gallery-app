@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gallery_app/config/routes/router.dart';
 import 'package:gallery_app/features/models/bottom_appbar.dart';
+import 'package:gallery_app/features/models/button_model.dart';
 import 'package:gallery_app/features/models/container_model.dart';
 import 'package:gallery_app/features/models/row_column.dart';
 import 'package:gallery_app/features/models/stack_align.dart';
@@ -24,6 +25,7 @@ void main() {
         ChangeNotifierProvider(create: (_) => ContainerModel()),
         ChangeNotifierProvider(create: (_) => BottomAppbarModel()),
         ChangeNotifierProvider(create: (_) => WrapChipModel()),
+        ChangeNotifierProvider(create: (_) => ButtonModel()),
       ],
       child: const MyApp(),
     ),
