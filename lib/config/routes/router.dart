@@ -9,6 +9,7 @@ import 'package:gallery_app/features/screens/image_appbar_screen.dart';
 import 'package:gallery_app/features/screens/rich_text_screen.dart';
 import 'package:gallery_app/features/screens/row_column_screen.dart';
 import 'package:gallery_app/features/screens/stack_align_screen.dart';
+import 'package:gallery_app/features/screens/text_field_screen.dart';
 import 'package:gallery_app/features/screens/wrap_chip_screen.dart';
 
 class AppRouter {
@@ -36,6 +37,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const WrapChipScreen());
       case '/ButtonScreen':
         return MaterialPageRoute(builder: (_) => const ButtonScreen());
+      case '/TextFieldScreen':
+        return MaterialPageRoute(builder: (_) => const TextFieldScreen());
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(
