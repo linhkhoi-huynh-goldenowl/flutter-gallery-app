@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gallery_app/config/routes/router.dart';
+import 'package:gallery_app/features/models/bottom_appbar.dart';
 import 'package:gallery_app/features/models/container_model.dart';
 import 'package:gallery_app/features/models/row_column.dart';
 import 'package:gallery_app/features/models/stack_align.dart';
@@ -20,6 +21,7 @@ void main() {
         ChangeNotifierProvider(create: (_) => RowColumnModel()),
         ChangeNotifierProvider(create: (_) => StackAlignModel()),
         ChangeNotifierProvider(create: (_) => ContainerModel()),
+        ChangeNotifierProvider(create: (_) => BottomAppbarModel()),
       ],
       child: const MyApp(),
     ),

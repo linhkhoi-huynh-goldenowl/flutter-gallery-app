@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:gallery_app/features/screens/bottom_appbar_screen.dart';
 import 'package:gallery_app/features/screens/container_screen.dart';
 import 'package:gallery_app/features/screens/cupertino_widget/cupertino_screen.dart';
+import 'package:gallery_app/features/screens/custom_box_screen.dart';
 import 'package:gallery_app/features/screens/home_screen.dart';
+import 'package:gallery_app/features/screens/image_appbar_screen.dart';
 import 'package:gallery_app/features/screens/rich_text_screen.dart';
 import 'package:gallery_app/features/screens/row_column_screen.dart';
 import 'package:gallery_app/features/screens/stack_align_screen.dart';
@@ -21,6 +24,12 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const StackAlignScreen());
       case '/ContainerScreen':
         return MaterialPageRoute(builder: (_) => const ContainerScreen());
+      case '/BottomAppbarScreen':
+        return MaterialPageRoute(builder: (_) => const BottomAppbarScreen());
+      case '/CustomBoxScreen':
+        return MaterialPageRoute(builder: (_) => const CustomBoxScreen());
+      case '/ImageAppbarScreen':
+        return MaterialPageRoute(builder: (_) => const ImageAppbarScreen());
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(
