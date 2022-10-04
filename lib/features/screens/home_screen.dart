@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
           HomeItem(
               title: "Bottom app bar",
               subtitle: "Bottom application bar",
-              routeName: "routeName",
+              routeName: "/BottomAppbarScreen",
               iconData: Icons.menu),
           HomeItem(
               title: "Button",
