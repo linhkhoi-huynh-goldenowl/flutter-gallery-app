@@ -6,7 +6,7 @@ class ButtonModel with ChangeNotifier {
   String _dropdowmFormField = "Apple";
   String get dropdowmFormField => _dropdowmFormField;
 
-  List<bool> _isSelected = [false, false, false];
+  final List<bool> _isSelected = [false, false, false];
   get isSelected => _isSelected;
 
   setSelectedValue(int i, bool value) {

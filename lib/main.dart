@@ -5,6 +5,7 @@ import 'package:gallery_app/features/models/button_model.dart';
 import 'package:gallery_app/features/models/container_model.dart';
 import 'package:gallery_app/features/models/row_column.dart';
 import 'package:gallery_app/features/models/stack_align.dart';
+import 'package:gallery_app/features/models/text_field_model.dart';
 import 'package:gallery_app/features/models/wrap_chip.dart';
 import 'features/provider/cupertino_slider_provider.dart';
 import 'features/models/cupertino_form.dart';
@@ -26,6 +27,7 @@ void main() {
         ChangeNotifierProvider(create: (_) => BottomAppbarModel()),
         ChangeNotifierProvider(create: (_) => WrapChipModel()),
         ChangeNotifierProvider(create: (_) => ButtonModel()),
+        ChangeNotifierProvider(create: (_) => TextFieldModel()),
       ],
       child: const MyApp(),
     ),
