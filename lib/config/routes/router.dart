@@ -8,6 +8,7 @@ import 'package:gallery_app/features/screens/image_appbar_screen.dart';
 import 'package:gallery_app/features/screens/rich_text_screen.dart';
 import 'package:gallery_app/features/screens/row_column_screen.dart';
 import 'package:gallery_app/features/screens/stack_align_screen.dart';
+import 'package:gallery_app/features/screens/wrap_chip_screen.dart';
 
 class AppRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -30,6 +31,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const CustomBoxScreen());
       case '/ImageAppbarScreen':
         return MaterialPageRoute(builder: (_) => const ImageAppbarScreen());
+      case '/WrapChipScreen':
+        return MaterialPageRoute(builder: (_) => const WrapChipScreen());
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(

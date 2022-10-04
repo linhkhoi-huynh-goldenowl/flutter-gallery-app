@@ -4,6 +4,7 @@ import 'package:gallery_app/features/models/bottom_appbar.dart';
 import 'package:gallery_app/features/models/container_model.dart';
 import 'package:gallery_app/features/models/row_column.dart';
 import 'package:gallery_app/features/models/stack_align.dart';
+import 'package:gallery_app/features/models/wrap_chip.dart';
 import 'features/provider/cupertino_slider_provider.dart';
 import 'features/models/cupertino_form.dart';
 import 'features/models/cupertino_switch.dart';
@@ -22,6 +23,7 @@ void main() {
         ChangeNotifierProvider(create: (_) => StackAlignModel()),
         ChangeNotifierProvider(create: (_) => ContainerModel()),
         ChangeNotifierProvider(create: (_) => BottomAppbarModel()),
+        ChangeNotifierProvider(create: (_) => WrapChipModel()),
       ],
       child: const MyApp(),
     ),
